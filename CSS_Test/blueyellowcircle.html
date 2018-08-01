@@ -1,0 +1,40 @@
+<HTML>
+    <head>
+        <style>
+            .blueyellowcircle {
+                position: relative;
+                border-radius: 50%;
+                width: 400px;
+                height: 400px;
+                background: repeating-linear-gradient(0deg, yellow 0px, yellow 100px, cyan 100px, cyan 200px);
+            }
+            #circle {
+                animation-name: spin;
+                animation-duration: 20s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                 }
+                100% {
+                    transform: rotate(360deg);
+                 }
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="interface.css" />
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+     <header>
+        <ul>
+            <li><a href="_home.html">Home</a></li>
+        </ul>
+    </header>
+    <body>
+		<div class="container">
+            <div class="blueyellowcircle" id="circle">
+            </div>
+        </div>
+    </body>
+</HTML>
